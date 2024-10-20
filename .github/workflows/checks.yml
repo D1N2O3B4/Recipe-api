@@ -17,8 +17,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Docker-Compose Install
-        run: composer install
       - name: Test
         run: docker compose run --rm app sh -c "python manage.py test"
       - name: Lint
