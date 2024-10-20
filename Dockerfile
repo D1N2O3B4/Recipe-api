@@ -25,7 +25,7 @@ RUN python -m venv /py && \
         --disabled-password \
         --no-create-home \
         django-user && \
-    /py/bin/pip install flake8
+    /py/bin/pip install flakea
 
 ENV PATH="/py/bin:$PATH"
 
