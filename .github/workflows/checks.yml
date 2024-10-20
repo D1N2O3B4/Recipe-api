@@ -23,8 +23,6 @@ jobs:
       - name: Build Docker containers
         run: docker-compose build
 
-      - name: Install Dependencies
-        run: docker-compose run --rm app sh -c "make install && make install-pre-commit"
 
       - name: Test
         run: docker-compose run --rm app sh -c "python manage.py test"
